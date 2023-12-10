@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lista de Tareas</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="Images/Icon.png">
+    </head>
+
+    <body>
+        <div>
+            <img class="image" src="Images/Logo.png" alt="Tasks">
+            <h1>Lista de Tareas</h1>
+        </div>
+        
+        <input type="text" id="nuevaTarea" placeholder="Ingrese una nueva tarea"">
+
+        <button class="add" id="agregar">Agregar</button>
+
+        <button class="comp" id="mostrarCompletadas">Mostrar Completadas</button>
+        <button class="pending" id="mostrarPendientes">Mostrar Pendientes</button>
+        <button class="all" id="mostrarTodas">Mostrar Todas</button>
+
+        <ul id="listaTareas"></ul>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>¿Estás seguro de que deseas eliminar esta tarea?</p>
+              <button id="confirmarEliminar">Aceptar</button>
+              <button id="cancelarEliminar">Cancelar</button>
+            </div>
+          </div>
+        <script src="script.js"></script>
+    </body>
+</html>
